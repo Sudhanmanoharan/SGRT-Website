@@ -1705,14 +1705,14 @@ select:focus {
 }
 .testimonial-area .owl-dots .owl-dot.active span, 
 .testimonial-area .owl-dots .owl-dot:hover span {
-  background: #fdc716 none repeat scroll 0 0;
+  background: #c10a03 none repeat scroll 0 0;
 }
 
 .single-testimonial-item:hover{
-  border-color: #fdc716;
+  border-color: #c10a03;
 }
 .single-testimonial-item:hover .img-box{
-  border-color: #fdc716;    
+  border-color: #c10a03;    
 }
 
 
@@ -4849,6 +4849,13 @@ single-product-item:hover .img-holder img {
 #solution-single-area .sidebar .single-sidebar-item {
   margin-bottom: 50px;  
 }
+#solution-single-area .sidebar .single-sidebar-item .button {
+   text-align: center;
+   margin-top: 15px;  
+}
+#solution-single-area .sidebar .single-sidebar-item .button a{
+   padding: 13px 30px; 
+}
 #solution-single-area .sidebar .single-sidebar-item .solution-categories {
   
 }
@@ -5041,6 +5048,12 @@ single-product-item:hover .img-holder img {
 #solution-single-area .single-solution-content .top .text-holder .sec-title-two {
   padding-bottom: 34px;
 }
+#solution-single-area .single-solution-content .top .text-holder .sec-title-two .table-rich table tr{
+  color: black;
+}
+#solution-single-area .single-solution-content .top .text-holder .sec-title-two .table-rich p{
+  color: black;
+}
 #solution-single-area .single-solution-content .top .text-holder h3 {
   margin: 20px 0 0;
   text-transform: capitalize;
@@ -5124,7 +5137,6 @@ single-product-item:hover .img-holder img {
   margin: 8px 0;
   padding: 10px 30px;
 }
-
 
 
 
