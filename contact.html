@@ -24,7 +24,7 @@
         <div class="container">
             <div class="logo pull-left">
                 <a href="index.html">
-                    <img src="img/resources/logo.png" alt="Awesome Logo">
+                    <img class="header-image" src="img/project/logo.png" alt="Awesome Logo">
                 </a>
                 <span class="header-heading">Structural Glass Research and Testing (SGRT) Facility </span>
             </div>
@@ -213,13 +213,13 @@
                     <div class="single-footer-widget pd-bottom">
                         <div class="footer-logo">
                             <a href="index.html">
-                                <img src="img/footer/footer-logo.png" alt="Awesome Footer Logo">
+                                <img src="img/project/logo.jpeg" alt="Awesome Footer Logo">
                             </a>
                         </div>
                         <div class="industry-info">
                             <p class="text-justify">Structural Glass Research and Testing (SGRT) Facility, a joint
                                 initiative of Indian
-                                Institute of Technology (IITM) and Glazing Society of India (GSI) is an advanced, first
+                                Institute of Technology (IIT-M) and Glazing Society of India (GSI) is an advanced, first
                                 of its kind facility established at the Structural Engineering laboratory, Department of
                                 Civil Engineering in IIT Madras, Chennai, India.</p>
                         </div>
@@ -386,7 +386,46 @@
     <!-- thm custom script -->
     <script src="js/custom.js"></script>
 
+    <script>
+        function query_submit() {
+            // $("#loader").show();
+            // $('#exampleModal').modal('hide');
+            var name = document.getElementById('name');
+            var mail = document.getElementById('mail');
+            var mobileNumber = document.getElementById('phnumber');
+            var glassType = document.getElementById('glassType');
+            var message = document.getElementById('message');
+            var data = {
+                "name": name,
+                "mail": mail,
+                "mobileNumber": mobileNumber,
+                "glassType": glassType,
+                "message": message
+            };
 
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:3000/api/submit-query',
+                data: data,
+                dataType: "json",
+                success: function (res) {
+                    document.getElementById("name").value = '';
+                    document.getElementById("name").value = '';
+                    document.getElementById("phnumber").value = '';
+                    document.getElementById("glassType").value = '';
+                    document.getElementById("message").value = '';
+                    // $("#loader").hide();
+                    // if (res.result == 'Success') {
+                    //     $("#confirm").show();
+                    //     document.getElementById('text').innerHTML = 'Thanks for choosing 727 Motorcycle service. <br> Ours team will reach you soon';
+                    // } else {
+                    //     $("#confirm").show();
+                    //     document.getElementById('text').innerHTML = 'Something went went wrong ,please try again';
+                    // }
+                }
+            });
+        }
+    </script>
 
 
 
