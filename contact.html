@@ -359,10 +359,11 @@
                 "mobileNumber": mobileNumber,
                 "message": message
             };
-
+            // Local = http://localhost:3000/api/submit-query
+            // Prod = https://sgrt-lab.herokuapp.com/api/submit-query
             $.ajax({
                 type: "POST",
-                url: 'http://localhost:3000/api/submit-query',
+                url: 'https://sgrt-lab.herokuapp.com/api/submit-query',
                 data: data,
                 dataType: "json",
                 success: function (res) {
