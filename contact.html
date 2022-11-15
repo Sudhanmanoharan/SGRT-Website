@@ -26,27 +26,17 @@
                 <a href="index.html">
                     <img class="header-image" src="img/project/logo.png" alt="Awesome Logo">
                 </a>
-                <span class="header-heading">Structural Glass Research and Testing (SGRT) Facility </span>
+                <span class="header-heading">Structural Glass Research and Testing Facility </span>
             </div>
             <div class="top-info pull-right">
                 <ul>
-                    <!-- <li class="single-info-box">
-                        <div class="icon-holder">
-                            <span class="flaticon-earth-grid"></span>
-                        </div>
-                        <div class="text-holder">
-                            <p><span>Address:</span> 20c Factory Street,<br>Newyork, NY 10205</p>
-                        </div>
-                    </li> -->
                     <li class="single-info-box">
-                        <!-- <div class="icon-holder">
-                            <span class="flaticon-email-envelope-back-symbol-on-phone-screen"></span>
-                        </div> -->
                         <div class="text-holder">
-                            <p><span>Call Us:</span> +(91) 94445 35309 <br><span>Mail Us:</span> sgrt.iitm@gmail.com</p>
-                        </div>
+                            <li><span>Tel:</span><a target="_blank" href="tel:919444535309"> +91 94445 35309</a></li>
+                            <li><span>Mail:</span><a target="_blank" href="mailto:sgrt.iitm@gmail.com"> sgrt.iitm@gmail.com</a> </li>
+                         </div>
                     </li>
-                </ul>
+                 </ul>
             </div>
         </div>
     </header>
@@ -82,25 +72,8 @@
                                 </ul>
                             </div>
                         </nav>
-                        <!-- <div class="top-search-box pull-right">
-                            <button><i class="fa fa-search"></i></button>
-                            <ul class="search-box">
-                                <li>
-                                    <form action="#">
-                                        <input type="text" placeholder="Search for something...">
-                                        <button type="submit"><i class="fa fa-search"></i></button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div> -->
                     </div>
                 </div>
-                <!-- <div class="col-md-2 col-sm-12 col-xs-3">
-                    <div class="quote-button">
-                        <a class="thm-btn yellow-bg" href="#"><i class="fa fa-share" aria-hidden="true"></i>Get a
-                            Quote</a>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -142,10 +115,9 @@
                             <span class="border"></span>
                         </div>
                         <h3>I would like to discuss:</h3>
-                        <form action="http://st.ourhtmldemo.com/new/indusrty-press/inc/sendemail.php"
-                            class="contact-form">
+                        <form class="contact-form">
                             <div class="row">
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
                                     <select class="selectmenu">
                                         <option selected="selected">Select Glass Type</option>
                                         <option value="float-glass">Float Glass</option>
@@ -154,28 +126,30 @@
                                         <option value="laminated-glass">Laminated Glass</option>
                                         <option value="igu">IGU (Insulated Glazing Unit) </option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="col-md-6">
-                                    <input type="text" name="name" placeholder="Your Name *">
+                                    <input required type="text" name="name" id="name" placeholder="Your Name*">                                </div>
+                                <div class="col-md-6">
+                                    <input required type="text" name="mail" id="mail" placeholder="Email Address*">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" name="mail" placeholder="Your Mail *">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" name="phnumber" placeholder="Phone Num">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <textarea name="message" placeholder="Write Your Needs..."></textarea>
+                                    <input required type="text" name="phnumber" id="phnumber" placeholder="Phone number*">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button class="thm-btn yellow-bg" type="submit">Your Message</button>
+                                    <textarea required name="message" id="message" placeholder="Write Your Needs..."></textarea>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="thm-btn yellow-bg" type="submit" onclick="query_submit()">
+                                        <span id="submit">Submit</span>
+                                        <span id="loader"><i class="fa fa-circle-o-notch fa-spin"></i> Loading </span>
+                                    </button>
+                                    <span id="text-message" class="mt-1 ml-2"></span>                                </div>
                             </div>
                         </form>
                     </div>
@@ -191,18 +165,6 @@
       &q=SGRT+-+Structural+Glass+Research+and+Testing+Facility">
         </iframe>
     </div>
-    <!-- <section class="google-map-area">
-        <div class="google-map" // Must add this class id="contact-google-map" // A unique id of your map
-            data-map-lat="40.712784" // Add latitude of your map data-map-lng="-74.005941" // Add Longitude of your map
-            data-icon-path="img/resources/map-marker.png" // Add custom icon of your map
-            data-map-title="Brooklyn, New York, United Kingdom" // Add map here data-map-zoom="12" // Add map zoom value
-            here data-markers='{
-            "marker-3": [40.678178, -73.944158, "<h4>Branch Office</h4> <p>228 Park Ave S, Brooklyn, UK</p>"],
-            "marker-4": [40.735657, -74.172367, "<h4>Branch Office</h4> <p>228 Park Ave S, Brooklyn, UK</p>"],
-            "marker-5": [40.668714, -74.114309, "<h4>Branch Office</h4> <p>228 Park Ave S, Brooklyn, UK</p>"]
-        }'>
-        </div>
-    </section> -->
     <!--End Google map area-->
     <!--Start footer area-->
     <footer class="footer-area">
@@ -304,15 +266,7 @@
                                     <p><span>Mobile:</span> +(91) 9444535309</p>
                                 </div>
                             </li>
-                            <!-- <li>
-                            <div class="icon-holder">
-                                <span class="flaticon-clock"></span>
-                            </div>
-                            <div class="content-holder">
-                                <p><span>Mon - Sat Day:</span> 10.00 - 18.00 Sunday Closed</p>
-                            </div>
-                        </li> -->
-                        </ul>
+                          </ul>
                     </div>
                 </div>
                 <!--End single footer widget-->
@@ -387,19 +341,22 @@
     <script src="js/custom.js"></script>
 
     <script>
+        $(document).ready(function () {
+            document.getElementById("loader").style.display = 'none';
+            document.getElementById('text-message').style.display = "none";
+        });
+
         function query_submit() {
-            // $("#loader").show();
-            // $('#exampleModal').modal('hide');
-            var name = document.getElementById('name');
-            var mail = document.getElementById('mail');
-            var mobileNumber = document.getElementById('phnumber');
-            var glassType = document.getElementById('glassType');
-            var message = document.getElementById('message');
+            document.getElementById("submit").style.display = 'none';
+            document.getElementById("loader").style.display = 'block';
+            var name = document.getElementById('name').value;
+            var mail = document.getElementById('mail').value;
+            var mobileNumber = document.getElementById('phnumber').value;
+            var message = document.getElementById('message').value;
             var data = {
                 "name": name,
                 "mail": mail,
                 "mobileNumber": mobileNumber,
-                "glassType": glassType,
                 "message": message
             };
 
@@ -410,24 +367,23 @@
                 dataType: "json",
                 success: function (res) {
                     document.getElementById("name").value = '';
-                    document.getElementById("name").value = '';
+                    document.getElementById("mail").value = '';
                     document.getElementById("phnumber").value = '';
-                    document.getElementById("glassType").value = '';
                     document.getElementById("message").value = '';
-                    // $("#loader").hide();
-                    // if (res.result == 'Success') {
-                    //     $("#confirm").show();
-                    //     document.getElementById('text').innerHTML = 'Thanks for choosing 727 Motorcycle service. <br> Ours team will reach you soon';
-                    // } else {
-                    //     $("#confirm").show();
-                    //     document.getElementById('text').innerHTML = 'Something went went wrong ,please try again';
-                    // }
+                    document.getElementById("submit").style.display = 'block';
+                    document.getElementById("loader").style.display = 'none';
+                    document.getElementById('text-message').style.display = "block";
+                    if (res.result == 'Success') {
+                        document.getElementById('text-message').innerHTML = res.message;
+                        document.getElementById('text-message').style.color = '#0e112c';
+                    } else {
+                        document.getElementById('text-message').innerHTML = 'Something went went wrong ,please try again';
+                        document.getElementById('text-message').style.color = 'red';
+                    }
                 }
             });
         }
     </script>
-
-
 
 
 </body>
