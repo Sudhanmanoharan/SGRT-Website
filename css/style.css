@@ -1802,7 +1802,6 @@ select:focus {
   transition: all 500ms ease 0s;
   width: 100%;
   font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
 }
 .send-message form .input-field input[type="text"]:focus {
   border: 1px solid #0e122c;
@@ -2536,7 +2535,6 @@ select:focus {
   height: 50px;
   margin-bottom: 30px;
   padding: 0 15px;
-  text-transform: capitalize;
   transition: all 500ms ease 0s;
   width: 100%;
 }
