@@ -1034,7 +1034,7 @@ select:focus {
 .about-us-area .content-column {
   background: #f7f7f7 none repeat scroll 0 0;
   float: right;
-  height: 527px;
+  min-height: 445px;
   overflow: hidden;
   padding: 80px 15px 50px 65px;
   position: relative;
@@ -1642,6 +1642,7 @@ select:focus {
 .single-testimonial-item {
   border: 1px solid #f7f7f7;
   padding-bottom: 13px;
+  height: 240px;
   -webkit-transition: border-color 0.4s ease 0s;
   transition: border-color 0.4s ease 0s;
 }
@@ -5028,6 +5029,7 @@ single-product-item:hover .img-holder img {
 }
 #solution-single-area .single-solution-content .top .text-holder {
   padding-left: 25px;
+  color: black;
 }
 #solution-single-area .single-solution-content .top .text-holder .sec-title-two {
   padding-bottom: 34px;
