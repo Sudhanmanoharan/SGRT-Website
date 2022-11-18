@@ -988,6 +988,7 @@ select:focus {
   padding-bottom: 17px;
   padding-left: 65px;
   padding-top: 17px;
+  height: 70px;
   position: relative;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -1015,7 +1016,9 @@ select:focus {
 }
 
 .about-us-area .icon-box .single-item .content {
+  margin-top: 10px;
 }
+
 .about-us-area .icon-box .single-item .content h2 {
   color: #ffffff;
   font-size: 20px;
@@ -1034,7 +1037,7 @@ select:focus {
 .about-us-area .content-column {
   background: #f7f7f7 none repeat scroll 0 0;
   float: right;
-  min-height: 445px;
+  height: 414px;
   overflow: hidden;
   padding: 80px 15px 50px 65px;
   position: relative;
@@ -1499,7 +1502,7 @@ select:focus {
 .single-team-member .text-holder p {
   position: relative;
 }
-.single-team-member .text-holder p::before {
+/* .single-team-member .text-holder p::before {
   background: #fdc716 none repeat scroll 0 0;
   bottom: -14px;
   content: "";
@@ -1509,7 +1512,7 @@ select:focus {
   width: 0px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-}
+} */
 
 .single-team-member .text-holder ul {
   overflow: hidden;
@@ -5153,10 +5156,10 @@ single-product-item:hover .img-holder img {
 
 @keyframes button-loading-spinner {
   from {
-      transform: rotate(0turn);
+    transform: rotate(0turn);
   }
 
   to {
-      transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
