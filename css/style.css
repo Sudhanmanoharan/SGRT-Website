@@ -1474,9 +1474,14 @@ select:focus {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+
+.faculty-web {
+  font-size: 12px;
+}
+
 .single-team-member .img-holder .overlay-box .box .content .member-social-links li a:hover i {
   background: #fff;
-  color: #fdc716;
+  color: #0e122c;
 }
 
 .single-team-member .text-holder {
