@@ -1479,6 +1479,10 @@ select:focus {
   font-size: 12px;
 }
 
+.contain {
+  object-fit: contain;
+}
+
 .single-team-member .img-holder .overlay-box .box .content .member-social-links li a:hover i {
   background: #fff;
   color: #0e122c;
