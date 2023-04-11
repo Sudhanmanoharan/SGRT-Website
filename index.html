@@ -1050,13 +1050,13 @@
                             <p>Get In Touch</p>
                             <h1>Queries</h1>
                         </div>
-                        <form class="contact-form">
+                        <form id="queryForm" class="contact-form">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-field">
-                                                <input required type="text" name="name" id="name"
+                                                <input required type="text" name="username" id="username"
                                                     placeholder="Your Name*">
                                             </div>
                                         </div>
@@ -1481,7 +1481,7 @@
         function query_submit() {
             document.getElementById("submit").style.display = 'none';
             document.getElementById("loader").style.display = 'block';
-            var name = document.getElementById('name').value;
+            var name = document.getElementById('username').value;
             var mail = document.getElementById('mail').value;
             var mobileNumber = document.getElementById('phnumber').value;
             var message = document.getElementById('message').value;
@@ -1498,7 +1498,7 @@
                 data: data,
                 dataType: "json",
                 success: function (res) {
-                    document.getElementById("name").value = '';
+                    document.getElementById("username").value = '';
                     document.getElementById("mail").value = '';
                     document.getElementById("phnumber").value = '';
                     document.getElementById("message").value = '';
