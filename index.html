@@ -1223,7 +1223,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
                     <div class="copyright-text">
-                        <p>Copyright © 2022 Structural Glass Research & Testing (SGRT) </p>
+                        <p>Copyright © 2023 Structural Glass Research & Testing (SGRT) </p>
                     </div>
                 </div>
             </div>
@@ -1323,6 +1323,7 @@
                 dataType: "json",
                 success: function (res) {
                     document.getElementById("spinner").style.display = 'none';
+                    snackbarFunction();
                     requestData = {};
                 }
             });
@@ -1342,7 +1343,6 @@
                 }
                 formValidate = false;
                 modalInputFieldValue = [];
-                snackbarFunction();
                 document.querySelectorAll(".has-success").forEach(function (element) {
                     element.classList.remove("has-success");
                 });
