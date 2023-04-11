@@ -462,6 +462,11 @@
 .top-info ul li .social-links {
   top: 0px;
 }    
+
+.modal-dialog {
+  margin-top: 30% !important;
+  width: 85% !important;
+}
        
 /*** 
 =============================================
@@ -641,7 +646,6 @@
 }    
 .about-us-area .content-column {
   float: none;
-  height: 900px;
   margin: 0 auto;
   padding: 30px 30px 0 30px;
   width: 100%;
@@ -961,6 +965,7 @@
       margin-top: 40px !important;
       margin-bottom: 20px !important;
     }
+
     
     
     
