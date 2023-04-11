@@ -1324,6 +1324,15 @@
                 success: function (res) {
                     document.getElementById("spinner").style.display = 'none';
                     snackbarFunction();
+                    if (urlValue) {
+                        window.open(urlValue, '_blank').focus();
+                    }
+                    formValidate = false;
+                    modalInputFieldValue = [];
+                    document.querySelectorAll(".has-success").forEach(function (element) {
+                        element.classList.remove("has-success");
+                    });
+                    $('#contactform')[0].reset();
                     requestData = {};
                 }
             });
@@ -1338,15 +1347,6 @@
         function detailsFormSubmit() {
             if (formValidate) {
                 $('#exampleModalCenter').modal('hide');
-                if (urlValue) {
-                    window.open(urlValue, '_blank').focus();
-                }
-                formValidate = false;
-                modalInputFieldValue = [];
-                document.querySelectorAll(".has-success").forEach(function (element) {
-                    element.classList.remove("has-success");
-                });
-                $('#contactform')[0].reset();
                 details_submit();
             }
         }
