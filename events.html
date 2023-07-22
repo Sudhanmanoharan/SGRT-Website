@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .text-color {
+            color: #0e112c;
+            font-weight: 500;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .timeline {
+            width: 100%;
+            /* max-width: 800px; */
+            background: #fff;
+            padding: 100px 39px;
+            position: relative;
+            /* box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); */
+        }
+
+        .timeline:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: calc(33% + 15px);
+            bottom: 0px;
+            width: 4px;
+            background: #ddd;
+        }
+
+        .timeline:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .entry {
+            clear: both;
+            text-align: left;
+            position: relative;
+        }
+
+        .entry .title {
+            margin-bottom: 0.5em;
+            float: left;
+            width: 33%;
+            padding-right: 30px;
+            text-align: right;
+            position: relative;
+        }
+
+        .entry .title:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 4px solid #0e112c;
+            background-color: #fff;
+            border-radius: 100%;
+            top: 15%;
+            right: -8px;
+            z-index: 99;
+        }
+
+        .entry .title h3 {
+            margin: 0;
+            font-size: 120%;
+            background: #0e112c;
+            color: white;
+            width: 60px;
+            text-align: center;
+            float: right;
+            border-radius: 7px;
+        }
+
+        .entry .title p {
+            margin: 0;
+            font-size: 100%;
+        }
+
+        .entry .body {
+            margin: 0 0 3em;
+            float: right;
+            width: 66%;
+            padding-left: 30px;
+        }
+
+        .entry .body p {
+            line-height: 1.4em;
+        }
+
+        .entry .body p:first-child {
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        .entry .body ul {
+            color: #aaa;
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .entry .body ul li:before {
+            content: "–";
+            margin-right: 0.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Start header area-->
+    <header class="header-area">
+        <div class="container">
+            <div class="logo pull-left">
+                <a href="index.html">
+                    <img class="header-image" src="img/project/logo.png" alt="Awesome Logo">
+                </a>
+                <span class="header-heading">Structural Glass Research and Testing Facility </span>
+            </div>
+            <div class="top-info pull-right">
+                <ul>
+                    <li class="single-info-box">
+                        <div class="text-holder">
+                    <li><span>Tel:</span><a target="_blank" href="tel:919444535309"> +91 94445 35309</a></li>
+                    <li><span>Mail:</span><a target="_blank" href="mailto:sgrt.iitm@gmail.com"> sgrt.iitm@gmail.com</a>
+                    </li>
+                    <a style="padding: 0px 10px" href="https://www.iitm.ac.in/" target="_blank">
+                        <img class="header-image" src="img/project/iitm.png" alt="Awesome Logo">
+                    </a>
+            </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <!--End header area-->
+
+    <!--Start mainmenu area-->
+    <section class="mainmeu-area stricky">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="mainmenu-bg clearfix">
+                        <nav class="main-menu pull-left">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation">
+                                    <!-- <li><a href="index.html">Home</a></li> -->
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="current"><a href="">Events</a></li>
+                                    <li><a href="activities.html">Activities</a></li>
+                                    <!-- <li class="dropdown"><a href="services.html">Services</a>
+                                        <ul>
+                                            <li><a href="testing-facilities.html">Testing Facilities</a></li>
+                                            <li><a href="research-consultancy.html">Research & Consultancy</a></li>
+                                            <li><a href="training-industrial-visit-awareness.html">Training, Industrial Visit and Awareness</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End mainmenu area-->
+
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area" style="background-image: url(img/breadcrumb/breadcrumb-bg.jpg); display: none;">
+        <div class="container text-center">
+            <h1>About Us</h1>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area" style="display: none;">
+        <div class="container">
+            <div class="left pull-left">
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="right pull-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb bottom area-->
+
+    <!--Start welcome Industry area-->
+    <section class="welcome-industry-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <div class="sec-title">
+                            <!-- <p>Welcome to SGRT</p> -->
+                            <h1>Events</h1>
+                        </div>
+                        <div class="timeline">
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2015</h3>
+                                    <p class="text-justify float-right text-color">Students of Structural Engineering,
+                                        IIT Madras
+                                        visited TPRS Enterprises.</p>
+                                </div>
+                                <div class="body">
+                                    <ul>
+                                        <li class="text-justify">B.Tech students, scholars, and Ph.D. students from the
+                                            structural
+                                            engineering
+                                            department visited TPRS Enterprises Pvt Ltd, Puducherry on 19.09.2015 to
+                                            understand the architectural glass processing.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2016</h3>
+                                    <p class="text-justify float-right text-color">Seminar on Design and Challenges in
+                                        Glass façade
+                                        in Building</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Glazing Society of India and the Structural Glass Research and Testing
+                                            (SGRT)
+                                            Facility, Department of Civil Engineering, Indian Institute of Technology,
+                                            Madras (IIT-M) have successfully organized a one-day seminar on Design and
+                                            challenges in glass facade in buildings; Sustainability in Safety and Energy
+                                            Performance on Thursday, the 29th of September 2016 at IIT Madras,
+                                            Chennai.</li>
+                                        <li>The presentation sessions were followed by a visit to the Structural Glass
+                                            Research and Testing (SGRT) Facility, where the various testing to be done
+                                            on
+                                            different types of processed glass were demonstrated. About 50-plus
+                                            professionals including architects, builders, consultants, etc attended the
+                                            seminar.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-3.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <!-- <h3>2016</h3> -->
+                                    <p class="text-justify float-right text-color">Fensterbau Frontale.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>SGRT team and GSI team participated in the Fensterbau Frontale 2016 from
+                                            25.02.2016 to 27.02.2016.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2018</h3>
+                                    <p class="text-justify float-right text-color">One Day National Workshop on National
+                                        Building Code of India
+                                        2016: Glass and
+                                        Glazing Aspects- Mumbai.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Bureau of Indian Standards (BIS), Glazing Society of India (GSI), and IIT
+                                            Madras successfully conducted a one-day workshop on 'National Building
+                                            Code 2016: Glass and Glazing Aspects' on Friday, the 3rd August 2018 at, LS
+                                            Raheja School of Architecture. The Workshop was supported by the
+                                            Federation of Safety Glass, All India Glass Manufacturers Federation,
+                                            Confederation of Construction Products & Services, International
+                                            Fenestration
+                                            Forum, Glass Academy, uPVC Windows, and Doors Manufacturers
+                                            Association, and LS Raheja School of Architecture.</li>
+                                        <li>The objective of this workshop was to educate the entire construction value
+                                            chain on the codes and provisions given in NBC 2016 on the use of glass and
+                                            glazing systems in Indian Buildings and thereby enabling the implementation
+                                            of the same. As part of this workshop, a theme paper was given to the
+                                            participants which provides detailed inputs to the professionals in the
+                                            construction value chain to understand the design considerations, types, and
+                                            testing of glass and glazing systems used in Indian buildings as per the
+                                            National Building Code 2016 and other relevant Indian codes and Standards.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <p class="text-justify float-right text-color">Women Exclusive Skill Development
+                                        Workshop on
+                                        Energy Efficiency and Quality
+                                        Testing of Architectural Glass & Glazing Systems.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Indian Institute of Technology (IIT) Madras, Glazing Society of India (GSI),
+                                            and
+                                            International Finance Corporation (IFC) (part of World Bank) has
+                                            successfully
+                                            organized the first of its kind two day Women Exclusive Skill development
+                                            program on Energy Efficiency and Quality Testing of Architectural Glass &
+                                            Glazing Systems at IIT Madras in Chennai on 12th and 13th June 2018. This
+                                            exclusive workshop provided a technical plaƞorm for women to familiarize,
+                                            enhance, and gain further knowledge in the energy efficiency and quality
+                                            aspects of glass and glazing in buildings and thereby support them for a
+                                            sustainable and high-level career in the glass and glazing industry.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-4.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2020</h3>
+                                    <p class="text-justify float-right text-color">First Webinar on National Building
+                                        Code 2016.
+                                    </p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>After the successful completion of four National Workshops in New Delhi,
+                                            Mumbai, Bangalore, and Chennai, “The Bureau of Indian Standards (BIS),
+                                            Glazing Society of India (GSI), and Indian Institute of Technology (IIT)
+                                            Madras
+                                            organized the first webinar on National Building Code 2016: Glass and
+                                            Glazing
+                                            Aspects on 24th June 2020. The webinar was supported by AIGMF (All India
+                                            Glass Manufacturers Federation), CCPS (Confederation of Construction
+                                            Products & Services), FOSG (Federation of Safety Glass), UWDMA (uPVC
+                                            Windows and Doors Manufacturers Association), and Glass Academy.</li>
+                                        <li>The webinar was attended by over 780 participants comprising Architects,
+                                            Civil Engineers, Builders, Developers, Consultants, Contractors, Glass
+                                            Processors, Manufacturers, Govt Officials, Academia, and other
+                                            professionals.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-5.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <p class="text-justify float-right text-color">First Webinar on Indian Standards for
+                                        Glass:
+                                        Architectural and General.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Bureau of Indian Standards (BIS), Glazing Society of India (GSI), CSIR –
+                                            Centre for Glass and Ceramic Research Institute (CGCRI), and Indian
+                                            Institute of Technology Madras (IITM) are jointly organizing the First
+                                            Webinar on Indian Standards for Glass: Architectural and General Purposes on
+                                            Friday, the 9th October 2020 from 10.30 – 13.30 Hrs.</li>
+                                        <li>The First Webinar covered the Indian Standards for Float Glass, Heat
+                                            Strengthened Glass, Toughened Glass, Laminated Glass, and Insulated Glazing
+                                            Units used for Architectural and other general purposes. The audience for
+                                            the webinar included Float Manufacturers, Glass Processors, Fabricators,
+                                            Builders, Government, Professionals, and others.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-6.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2021</h3>
+                                    <p class="text-justify float-right text-color">Second Webinar on Indian Standards
+                                        for Glass and
+                                        Glazing: Architectural and
+                                        General Purposes.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Bureau of Indian Standards (BIS), Glazing Society of India (GSI), CSIR –
+                                            Centre for Glass and Ceramic Research Institute (CGCRI), and Indian
+                                            Institute of Technology Madras (IITM) jointly organized the Second Webinar
+                                            on Indian Standards for Glass and Glazing on Friday, the 26th February 2021
+                                            from 10.30 – 13.30 Hrs.</li>
+                                        <li>Topics covered :
+                                            IS 16978 – Part 1 to 4: Glass in Building: Forced Entry Security Glazing
+                                            IS 16945 – Fire Resistance Test for Glass Walls
+                                            IS 16947 – Fire Resistance Test for Doors with Glass Panes, Openable Glass
+                                            Windows, and Sliding Glass Windows
+                                            Process and Procedure of ISI Marking – Certification
+                                            BIS initiatives regarding Standardization Portal.
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                                href="https://www.youtube.com/watch?v=-wnc045VEqk">Webinar Link</a>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-7.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <p class="text-justify float-right text-color">Third Webinar on Indian Standards for
+                                        Glass and
+                                        Glazing: Architectural and
+                                        General Purposes.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Bureau of Indian Standards (BIS), Glazing Society of India (GSI), CSIR –
+                                            Centre for Glass and Ceramic Research Institute (CGCRI), and Indian
+                                            Institute of Technology Madras (IITM) jointly organized the Third Webinar on
+                                            Indian Standards for Glass: Architectural and General Purposes on Friday,
+                                            the 23rd July 2021 from 10.45 – 13.15 Hrs.</li>
+                                        <li>The Third Webinar covered the following Indian Standards and Procedures:
+                                            Overview of CHD, BIS
+                                            IS 14900 – Float Glass - Specification
+                                            IS 2553-1 – Safety Glass - Specification
+                                            Process and Procedure of ISI Marking – Certification
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                                href="https://www.youtube.com/watch?v=St7WBqUyjHc">Webinar Link</a>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-8.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <p class="text-justify float-right text-color">Fourth Webinar on Indian Standards
+                                        for Glass and
+                                        Glazing: Architectural and
+                                        General Purposes.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Bureau of Indian Standards (BIS), Glazing Society of India (GSI), CSIR –
+                                            Centre for Glass and Ceramic Research Institute (CGCRI), and Indian
+                                            Institute of Technology Madras (IITM) will jointly organize the Fourth
+                                            Webinar on Indian Standards for Glass: Architectural and General Purposes on
+                                            Friday, the
+                                            20th August 2021 from 10:30 – 13:00 Hrs.</li>
+                                        <li>
+                                            Topics covered
+                                            BIS initiative on Digitalization of Standardization process
+                                            IS 16978: Part 1 - 4: Glass in Buildings: Forced Entry Security Glazing
+                                            IS 16945: Fire Resistance Test for Doors with Glass Walls
+                                            IS 16947: Fire Resistance Test for Doors with Glass Panes, Openable Glass
+                                            Windows, and Sliding Glass Windows
+                                            Testing Facilities - Government facilities for Glass and Glazing in India
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                                href="https://www.youtube.com/watch?v=TDVw4cvljJ0">Webinar Link</a>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-9.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <p class="text-justify float-right text-color"> Visit to Winwall Testing Facility by
+                                        GSI and
+                                        SGRT team.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Glazing Society of India (GSI) and SGRT Team visited Winwall’s testing
+                                            facility, Gummudipoondi, Chennai on 4th May 2022 for technical knowledge on
+                                            the testing of building façades, doors, windows, and handrails. Cyclic
+                                            testing of hardware, fire, and glass testing.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-10.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <p class="text-justify float-right text-color">Installation of the new mirror test
+                                        setup.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>To test the structural stability of the mirrors, the Pendulum test (Impact
+                                            test) has been installed in the SGRT facility.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2022</h3>
+                                    <p class="text-justify float-right text-color">GSI and SGRT took part in the ZAK
+                                        Expo.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>SGRT with the Glazing Society of India (GSI) participated in the ZAK Glass
+                                            Technology Expo held from 1st to 3rd December 2022 at Pragati Maidan, New
+                                            Delhi.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-11.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry">
+                                <div class="title">
+                                    <h3>2023</h3>
+                                    <p class="text-justify float-right text-color">SGRT participated in Structural
+                                        Engineering
+                                        Laboratory Symposium, IIT Madras.</p>
+                                </div>
+                                <div class="body">
+                                    <ul class="text-justify">
+                                        <li>Structural Glass Research and Testing (SGRT) Facility participated in the
+                                            two- day symposium “Structural Engineering: The Way Forward” conducted by
+                                            the Department of Civil Engineering, I.I.T. Madras on the 9th and 10th of
+                                            February 2023. SGRT played a major role in elaborating the effective
+                                            application of glass in buildings and their structural testings done in SGRT
+                                            for academia and industries.</li>
+                                    </ul>
+                                    <div class="mt-1">
+                                        <img src="img/event/Events-12.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End welcome Industry area-->
+
+    <!--Start footer area-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <!--Start single footer widget-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget pd-bottom">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="img/project/logo.jpeg" alt="Awesome Footer Logo">
+                            </a>
+                        </div>
+                        <div class="industry-info">
+                            <p class="text-justify">Structural Glass Research and Testing (SGRT) Facility, a joint
+                                initiative of Indian
+                                Institute of Technology (IIT-M) and Glazing Society of India (GSI) is an advanced, first
+                                of its kind facility established at the Structural Engineering laboratory, Department of
+                                Civil Engineering in IIT Madras, Chennai, India.</p>
+                        </div>
+                        <!-- <ul class="footer-social-links">
+                            <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
+                        </ul> -->
+                    </div>
+                </div>
+
+                <!--End single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget pd-bottom-inst">
+                        <div class="title">
+                            <h3>Faculty</h3>
+                        </div>
+                        <ul class="contact-address">
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-people"></span>
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Prof. (Dr).</span> Arul S Jayachandran </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-earth-grid"></span>
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Address:</span> STR 403, Structural Engineering Divison,
+                                        Dept. of Civil Engineering
+                                        Indian Institute of Technology Madras
+                                        Chennai, Tamilnadu 600036, India.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget">
+                        <div class="title">
+                            <h3>Get In Touch</h3>
+                        </div>
+                        <ul class="contact-address">
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-earth-grid"></span>
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Address:</span> Structural Engineering Laboratory
+                                        Department of Civil Engineering
+                                        IIT Madras, Chennai – 600036 </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-technology-1"></span>
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Call Us:</span> 044 - 22575309</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <img src="img/resources/mail.svg" width="24" height="24">
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Mail Us:</span> sgrt.iitm@gmail.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-email-envelope-back-symbol-on-phone-screen"></span>
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Mobile:</span> +(91) 9444535309</p>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <div class="icon-holder">
+                                    <span class="flaticon-clock"></span>
+                                </div>
+                                <div class="content-holder">
+                                    <p><span>Mon - Sat Day:</span> 10.00 - 18.00 Sunday Closed</p>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+            </div>
+        </div>
+    </footer>
+    <!--End footer area-->
+
+    <!--Start footer bottom area-->
+    <section class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="copyright-text">
+                        <p>Copyright © 2023 Structural Glass Research & Testing (SGRT) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End footer bottom area-->
+
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+    <!-- main jQuery -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- bx slider -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- count to -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- validate -->
+    <script src="js/validate.js"></script>
+    <!-- mixit up -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- gmap helper -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+    <!--gmap script-->
+    <script src="js/gmaps.js"></script>
+    <script src="js/map-helper.js"></script>
+    <!-- video responsive script -->
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- jQuery ui js -->
+    <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <!-- fancy box -->
+    <script src="assets/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.appear.js"></script>
+
+    <!-- revolution slider js -->
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
+
+    <!-- thm custom script -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

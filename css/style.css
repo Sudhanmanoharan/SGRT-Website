@@ -1788,27 +1788,29 @@ select:focus {
   position: absolute;
 }
 
-.table-black{
+.table-black {
   color: black;
   border: 1px solid;
 }
 
-.table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-.table>thead>tr>th {
+.table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 1px solid black;
 }
 
 .form-group.required .control-label:after {
-  content:"*";
-  color:red;
+  content: "*";
+  color: red;
 }
 
-.control-label{
+.control-label {
   font-weight: 500;
 }
 
@@ -1817,18 +1819,18 @@ select:focus {
   color: black;
 }
 
-.modal-title{
+.modal-title {
   color: black;
   font-weight: 700;
   font-size: 18px;
 }
 
-.modal-body{
+.modal-body {
   max-height: calc(100vh - 300px);
   overflow-y: auto;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
   .modal:before {
     display: inline-block;
     vertical-align: middle;
@@ -1849,14 +1851,14 @@ select:focus {
 }
 
 .input-group {
-  width: 100%
+  width: 100%;
 }
 
-.form-control{
+.form-control {
   border-radius: 4px !important;
 }
 
-.blue-color{
+.blue-color {
   background-color: #0e122c;
   border-color: #0e122c;
 }
@@ -1868,12 +1870,12 @@ select:focus {
 }
 
 .alert-fixed {
-  position:fixed; 
-  top: 0px; 
-  left: 0px; 
+  position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  z-index:9999; 
-  border-radius:0px
+  z-index: 9999;
+  border-radius: 0px;
 }
 
 .pointer {
@@ -1905,8 +1907,7 @@ select:focus {
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-
-.loader-center{
+.loader-center {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1914,7 +1915,7 @@ select:focus {
   transform: -webkit-translate(-50%, -50%);
   transform: -moz-translate(-50%, -50%);
   transform: -ms-translate(-50%, -50%);
-  color:darkred;
+  color: darkred;
 }
 
 .loader {
@@ -1927,29 +1928,57 @@ select:focus {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 /*** 
@@ -1960,13 +1989,13 @@ select:focus {
 .brand-area {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #f7f7f7;
+  background: white;
 }
 .brand-area .brand .owl-stage-outer {
   z-index: 5;
 }
 .brand-area .brand .single-item {
-  border: 1px dashed #dadada;
+  border: 1px dashed white;
   /* height: 105px; */
   -webkit-transition: all 300ms ease-in 0s;
   transition: all 300ms ease-in 0s;
@@ -1974,7 +2003,7 @@ select:focus {
 }
 .brand-area .brand .single-item img {
   display: inline-block;
-  max-width: 150px !important;
+  /* max-width: 150px !important; */
   height: 150px;
   opacity: 1;
   /* padding: 35px 0; */
