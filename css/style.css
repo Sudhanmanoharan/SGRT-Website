@@ -444,13 +444,13 @@ select:focus {
   margin: 15px;
 }
 .top-info {
-  padding-top: 2px;
+  padding-top: 0px;
 }
 .top-info ul {
 }
 .top-info ul li {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 33px;
 }
 .top-info ul li.single-info-box {
   position: relative;
@@ -923,7 +923,7 @@ select:focus {
 }
 
 .services-area .single-service-item .text-holder {
-  padding-left: 60px;
+  /* padding-left: 60px; */
   position: relative;
   padding-top: 30px;
 }
@@ -947,10 +947,11 @@ select:focus {
   transition: all 500ms ease 0s;
 }
 .services-area .single-service-item .text-holder .text {
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 .services-area .single-service-item .text-holder .text h3 {
   margin: -6px 0 8px;
+  text-transform: none;
 }
 .services-area .single-service-item:hover .text-holder .icon {
   background: #0e122c;
@@ -1480,7 +1481,7 @@ select:focus {
 }
 
 .contain {
-  object-fit: contain;
+  object-fit: contain !important;
 }
 
 .single-team-member .img-holder .overlay-box .box .content .member-social-links li a:hover i {
@@ -2315,6 +2316,8 @@ td {
   padding-top: 123px;
   position: relative;
   z-index: 1;
+  background-size: cover;
+  background-position: center ;
 }
 .breadcrumb-area h1 {
   color: #ffffff;
@@ -5419,4 +5422,115 @@ single-product-item:hover .img-holder img {
   to {
     transform: rotate(1turn);
   }
+}
+
+/*** 
+=============================================
+   Timeline Design  
+=============================================
+***/
+
+.text-color {
+  color: #0e112c;
+  font-weight: 500;
+}
+
+.float-right {
+  float: right;
+}
+
+.timeline {
+  width: 100%;
+  /* max-width: 800px; */
+  background: #fff;
+  padding: 100px 39px;
+  position: relative;
+  /* box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); */
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+
+.entry .title {
+  margin-bottom: 0.5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+
+.entry .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #0e112c;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -8px;
+  z-index: 99;
+}
+
+.entry .title h3 {
+  margin: 0;
+  font-size: 120%;
+  background: #0e112c;
+  color: white;
+  width: 60px;
+  text-align: center;
+  float: right;
+  border-radius: 7px;
+}
+
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
+}
+
+.entry .body p {
+  line-height: 1.4em;
+}
+
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.entry .body ul li:before {
+  content: "–";
+  margin-right: 0.5em;
 }

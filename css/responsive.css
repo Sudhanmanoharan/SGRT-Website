@@ -2,12 +2,10 @@
 /* Large Layout: 1200px. */
 @media only screen and (min-width: 1200px){
 .container {padding: 0;}
-.container-fluid{padding: 0;}
-    
-
-    
-    
-    
+.container-fluid{padding: 0;}    
+.iitm-logo-mobile{
+  display: none;
+}
 }
 
 
@@ -20,6 +18,10 @@
 .top-info ul li {
   display: inline-block;
   margin-left: 25px;
+}
+
+.iitm-logo-mobile{
+  display: none;
 }
 
 /*** 
@@ -159,6 +161,15 @@
   display: inline-block;
   margin-left: 20px;
 } 
+
+.iitm-logo-right{
+  display: none !important;
+}
+
+.iitm-logo-mobile{
+  display: block;
+  text-align: center;
+}
     
 /*** 
 =============================================
@@ -433,6 +444,16 @@
 /*==============================================
     Header Area Css
 ===============================================*/
+
+.iitm-logo-right{
+  display: none !important;
+}
+
+.iitm-logo-mobile{
+  display: block;
+  text-align: center;
+}
+
 .header-area {
   padding-bottom: 0;
 }  
