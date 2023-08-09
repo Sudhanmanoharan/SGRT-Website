@@ -38,16 +38,17 @@
                 <ul>
                     <li class="single-info-box">
                         <div class="text-holder">
-                            <li><span>Tel:</span><a target="_blank" href="tel:919444535309"> +91 94445 35309</a></li>
-                            <li><span>Mail:</span><a target="_blank" href="mailto:sgrt.iitm@gmail.com"> sgrt.iitm@gmail.com</a> </li>
-                            <a class="iitm-logo-right" style="padding: 0px 10px" href="https://www.iitm.ac.in/" target="_blank">
-                                <img class="header-image" src="img/project/iitm.png"
-                                    style="height: 57px !important; margin-top: -10px;" alt="Awesome Logo">
-                            </a>
-                         </div>
+                    <li><span>Tel:</span><a target="_blank" href="tel:919444535309"> +91 94445 35309</a></li>
+                    <li><span>Mail:</span><a target="_blank" href="mailto:sgrt.iitm@gmail.com"> sgrt.iitm@gmail.com</a>
                     </li>
-                 </ul>
+                    <a class="iitm-logo-right" style="padding: 0px 10px" href="https://www.iitm.ac.in/" target="_blank">
+                        <img class="header-image" src="img/project/iitm.png"
+                            style="height: 57px !important; margin-top: -10px;" alt="Awesome Logo">
+                    </a>
             </div>
+            </li>
+            </ul>
+        </div>
         </div>
     </header>
     <!--End header area-->
@@ -136,8 +137,8 @@
                                         </div>
                                         <div class="accordion-box">
                                             <!--Start single accordion box-->
-                                            <div class="accordion accordion-block">
-                                                <div class="accord-btn">
+                                            <div class="accordion" id="1">
+                                                <div class="accord-btn accordion-header">
                                                     <h4>Research and Consultancy on Structural Glass at IITM</h4>
                                                 </div>
                                                 <div class="accord-content">
@@ -229,11 +230,11 @@
                                             </div>
                                             <!--End single accordion box-->
                                             <!--Start single accordion box-->
-                                            <div class="accordion accordion-block">
-                                                <div class="accord-btn">
+                                            <div class="accordion" id="2">
+                                                <div class="accord-btn accordion-header">
                                                     <h4>Research on lateral load behavior of Glass facade systems</h4>
                                                 </div>
-                                                <div class="accord-content">
+                                                <div class="accord-content" >
                                                     <p><b>Project Done by:</b> Mr P Midhun Babu, Dual degree, M.Tech in
                                                         Structural Engineering, 2010 batch.</p>
                                                     <br>
@@ -280,8 +281,8 @@
                                             </div>
                                             <!--End single accordion box-->
                                             <!--Start single accordion box-->
-                                            <div class="accordion accordion-block">
-                                                <div class="accord-btn">
+                                            <div class="accordion"  id="3">
+                                                <div class="accord-btn accordion-header">
                                                     <h4>Fragmentation result interpretation using image processing</h4>
                                                 </div>
                                                 <div class="accord-content">
@@ -316,8 +317,8 @@
                                             </div>
                                             <!--End single accordion box-->
                                             <!--Start single accordion box-->
-                                            <div class="accordion accordion-block">
-                                                <div class="accord-btn">
+                                            <div class="accordion" id="4">
+                                                <div class="accord-btn accordion-header">
                                                     <h4>Response behaviour of glazed facades subjected to wind loading
                                                     </h4>
                                                 </div>
@@ -620,7 +621,7 @@
                                     <span class="flaticon-people"></span>
                                 </div>
                                 <div class="content-holder">
-                                    <p><span>Prof. (Dr).</span> Arul S Jayachandran </p>
+                                    <p><span>Prof. (Dr).</span>S Arul Jayachandran </p>
                                 </div>
                             </li>
                             <li>
@@ -750,6 +751,22 @@
 
     <!-- thm custom script -->
     <script src="js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var hash = window.location.hash;
+            if (hash) {
+                var element = $(hash);
+                if (element.length) {
+                    $('.accord-btn').click(function () {
+                        $(this).toggleClass('active');
+                    });
+                    element.find('.accord-btn').trigger('click');
+                    document.getElementById(hash.substring(0)[1]).getElementsByTagName('div')[1].style.display = 'block';
+                }
+            }
+        });
+    </script>
 
 </body>
 
