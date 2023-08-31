@@ -1402,6 +1402,52 @@ select:focus {
   line-height: 24px;
   margin: -13px 0 0px;
 }
+.accordion {
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px solid #eaeaea;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgb(9, 48, 82);
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.active+.panel {
+  display: block;
+}
+
+.accordion.active:after {
+  font-family: FontAwesome;
+  content: "\f078";
+  font-family: "fontawesome";
+  font-size: 18px;
+  float: right;
+}
+
+.accordion:after {
+  font-family: "FontAwesome";
+  content: "\f054";
+  font-family: "fontawesome";
+  font-size: 18px;
+  float: right;
+}
 
 /*** 
 =============================================
