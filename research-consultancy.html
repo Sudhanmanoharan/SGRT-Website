@@ -1020,14 +1020,9 @@
             if (hash) {
                 console.log("hash --> ", hash.substring(0)[1]);
                 // document.getElementById(`accordion1${hash.substring(0)[1]}`).click();
-                document.getElementById("accordion1").click();
+                // document.getElementById("accordion1").click();
                 // var el = document.getElementById('accordion1');
-                var ele = document.getElementById('accordion1');
-                if (typeof ele.click == 'function') {
-                    ele.click()
-                } else if (typeof ele.onclick == 'function') {
-                    ele.onclick()
-                }
+                $('#accordion1').trigger('click');
             }
         });
 
