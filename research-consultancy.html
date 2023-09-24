@@ -152,8 +152,8 @@
 
                                         <div>
                                             <div id="accordionContainer">
-                                                <div class="row">
-                                                    <button id="accordion1" class="accordion"> Research and Consultancy
+                                                <div id="accordion1" class="row">
+                                                    <button class="accordion"> Research and Consultancy
                                                         on Structural Glass at IITM </button>
                                                     <div class="panel">
                                                         <div>
@@ -1020,9 +1020,9 @@
             if (hash) {
                 console.log("hash --> ", hash.substring(0)[1]);
                 // document.getElementById(`accordion1${hash.substring(0)[1]}`).click();
-                // document.getElementById("accordion1").click();
+                document.getElementById("accordion1").click();
+                console.log(" Accordian ", document.getElementById("accordion1"));
                 // var el = document.getElementById('accordion1');
-                $('#accordion1').trigger('click');
             }
         });
 

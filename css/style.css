@@ -1406,6 +1406,8 @@ select:focus {
   width: 100%;
   background-color: aliceblue;
   border: 1px solid #eaeaea;
+  /* border: none; */
+  /* border-radius: 5px; */
   outline: none;
   text-align: left;
   padding: 15px 20px;
@@ -1415,10 +1417,15 @@ select:focus {
   transition: all 0.3s ease 0s;
 }
 
-.active,
 .accordion:hover {
   background-color: rgb(9, 48, 82);
   color: white;
+}
+
+.active,
+.accordion:hover {
+  /* background-color: rgb(9, 48, 82);
+  color: white; */
 }
 
 .panel {
