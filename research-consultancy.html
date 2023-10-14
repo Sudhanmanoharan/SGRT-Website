@@ -152,10 +152,11 @@
 
                                         <div>
                                             <div id="accordionContainer">
-                                                <div id="accordion1" class="row">
-                                                    <button class="accordion"> Research and Consultancy
+                                                <div class="row">
+                                                    <button class="accordion" id="accordion1"> Research and Consultancy
                                                         on Structural Glass at IITM </button>
-                                                    <div class="panel">
+                                                    <div class="panel"
+                                                        style="height:310px; position:relative; max-height:100%;overflow:auto;border:1px solid grey;">
                                                         <div>
                                                             <p class="text-justify">Research study on “Structural glass
                                                                 as a
@@ -294,7 +295,8 @@
                                                 <div class="row">
                                                     <button class="accordion" id="accordion2"> Research on lateral load
                                                         behavior of Glass facade systems </button>
-                                                    <div class="panel">
+                                                    <div class="panel"
+                                                        style="height:310px; position:relative; max-height:100%;overflow:auto;border:1px solid grey;">
                                                         <div>
                                                             <p><b>Project Done by:</b> Mr P Midhun Babu, Dual degree,
                                                                 M.Tech in
@@ -375,7 +377,8 @@
                                                 <div class="row">
                                                     <button class="accordion" id="accordion3"> Fragmentation result
                                                         interpretation using image processing </button>
-                                                    <div class="panel">
+                                                    <div class="panel"
+                                                        style="height:310px; position:relative; max-height:100%;overflow:auto;border:1px solid grey;">
                                                         <div>
                                                             <p><b>Project Done by:</b> Mr Kowshik Chilamkurthy and MrSai
                                                                 Praneeth Devunuri, B Tech Civil Engineering, IIT Madras.
@@ -430,7 +433,8 @@
                                                 <div class="row">
                                                     <button class="accordion" id="accordion4"> Response behaviour of
                                                         glazed facades subjected to wind loading </button>
-                                                    <div class="panel">
+                                                    <div class="panel"
+                                                        style="height:310px; position:relative; max-height:100%;overflow:auto;border:1px solid grey;">
                                                         <div>
                                                             <p><b>Project Done by:</b> Mr Omkar Sukumar Powar, Research
                                                                 Scholar.
@@ -1018,11 +1022,12 @@
         $(document).ready(function () {
             var hash = window.location.hash;
             if (hash) {
-                console.log("hash --> ", hash.substring(0)[1]);
-                // document.getElementById(`accordion1${hash.substring(0)[1]}`).click();
-                document.getElementById("accordion1").click();
-                console.log(" Accordian ", document.getElementById("accordion1"));
-                // var el = document.getElementById('accordion1');
+                document.getElementById(`accordion${hash.substring(0)[1]}`).focus()
+                const acc = document.getElementById("accordionContainer");
+                const buttons = acc.querySelectorAll(".accordion");
+                const currentButton = document.getElementById(`accordion${hash.substring(0)[1]}`);
+                if (!currentButton) return
+                buttons.forEach(acc => acc.classList[acc === currentButton ? "toggle" : "remove"]("active"));
             }
         });
 
@@ -1033,6 +1038,7 @@
             const buttons = acc.querySelectorAll(".accordion");
             acc.addEventListener("click", e => {
                 const currentButton = e.target.closest(".accordion");
+                console.log("currentButton", currentButton);
                 if (!currentButton) return
                 buttons.forEach(acc => acc.classList[acc === currentButton ? "toggle" : "remove"]("active"));
             })
