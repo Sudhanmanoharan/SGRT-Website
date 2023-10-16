@@ -1045,7 +1045,7 @@
             const acc2 = document.getElementById("accordionContainer2");
             const buttons2 = acc2.querySelectorAll(".accordion");
             acc2.addEventListener("click", e => {
-                const currentButton = e.target.closest(".accordion");
+                const currentButton = e.target.closest(".accordion")
                 if (!currentButton) return
                 buttons2.forEach(acc => acc.classList[acc === currentButton ? "toggle" : "remove"]("active"));
             })
