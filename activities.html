@@ -1380,11 +1380,17 @@
 
         function focusAccordion(id) {
             var myDivID = "#b-" + id;
-            var center = ($(window).height() / 2) + 500;
+            var center = ($(window).height() / 2) + 250;
             var top = $(myDivID).offset().top;
-             if ((top > center) && (myDivID != '#b-1')) {
-                 $('html, body').animate({ scrollTop: top - center }, 'fast');            
-             }
+            if ((top > center) && (myDivID != '#b-1') && (myDivID != '#b-2')) {
+                $('html, body').animate({ scrollTop: top - center }, 'fast');
+            } else if (myDivID == '#b-1') {
+                center = ($(window).height() / 2) - 100;
+                $('html, body').animate({ scrollTop: top - center }, 'fast');
+            } else if (myDivID == '#b-2') {
+                center = ($(window).height() / 2) + 250;
+                $('html, body').animate({ scrollTop: top - center }, 'fast');
+            }
         }
 
         document.addEventListener("DOMContentLoaded", function (event) {
