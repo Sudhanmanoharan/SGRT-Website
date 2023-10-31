@@ -75,7 +75,7 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #9e9e9e;
+  color: #3a3a3a;
   line-height: 24px;
   font-weight: 400;
 }
@@ -5578,7 +5578,7 @@ single-product-item:hover .img-holder img {
 }
 
 .entry .body ul {
-  color: #aaa;
+  color: #3a3a3a;
   padding-left: 0;
   list-style-type: none;
 }
